@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table thead{
+            background-color: 'red';
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        table: table
+         row:  tr
+          column:  td 
+           cell   
+        caption
+        header, footer, body
+        thead, tbody, tfoot
+        merge
+     -->
+     <h1>Table of employees:</h1>
+     <table>
+        <thead>
+            <tr>
+                <th>No.</th> <th> Name </th> <th> Position </th> <th> Photo </th> <th> Upload</th>  <th> CV </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td> <td> Ahmad </td> <td> Web Developer </td> <td> <img src="assets/images/tulips-6800875_1280.webp" width="50" height="50"> </td> <td> <input type="file" /></td> <td><a href="assets/pdf/A Complete Guide to Grid _ CSS-Tricks.pdf">User CV</a></td>
+            </tr>
+            <tr>
+                <td>2</td> <td> Omar </td> <td> Software engineer </td> <td> <img src="assets/images/tulips-6800875_1280.webp" width="50" height="50"> </td> <td> <input type="file" /></td> <td><a href="assets/pdf/A Complete Guide to Grid _ CSS-Tricks.pdf">User CV</a></td>
+            </tr>
+            <tr>
+                <td>3</td> <td> Maryam </td> <td> Informtion tech </td> <td> <img src="assets/images/tulips-6800875_1280.webp" width="50" height="50"> </td> <td> <input type="file" /></td> <td><a href="assets/pdf/A Complete Guide to Grid _ CSS-Tricks.pdf">User CV</a></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>4</td> <td> Ayesha </td> <td> Data Scientist </td> <td> <img src="assets/images/tulips-6800875_1280.webp" width="50" height="50"> </td> <td> <input type="file" /></td> <td><a href="assets/pdf/A Complete Guide to Grid _ CSS-Tricks.pdf">User CV</a></td>
+            </tr>
+        </tfoot>
+     </table>
+</body>
+</html>

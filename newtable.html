@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        thead{
+            background-color:#ffbc00;
+        }
+        table,td{
+            border:1px solid;
+            border-collapse: collapse;
+        }
+        img{
+            border-radius: 50%;
+        }
+        table{
+            width:100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        table: table
+         row:  tr
+          column:  td 
+           cell   
+        caption
+        header, footer, body
+        thead, tbody, tfoot
+        merge
+     -->
+     <h1>Table of employees:</h1>
+     <table>
+          <colgroup>
+            <col span="1" style="background-color: #D6EEEE">
+          </colgroup>
+            <tr>
+                <th>No.</th> 
+                <th> Name </th> 
+                <th> Position </th> 
+                <th colspan="3"> Employee Info </th> 
+                <!-- <th> Upload</th>  
+                <th> CV </th> -->
+            </tr>
+        
+            <tr>
+                <td rowspan="4">1</td> 
+                <td> Ahmad </td> 
+                <td> Web Developer </td> 
+                <td> 
+                    <img src="assets/images/tulips-6800875_1280.webp" 
+                    width="50" 
+                    height="50"> 
+                </td> 
+                <td width="100"> 
+                    <input type="file" />
+                </td> 
+                <td>
+                    <a href="assets/pdf/A Complete Guide to Grid _ CSS-Tricks.pdf">User CV</a>
+                </td>
+            </tr>
+            <tr>
+                 <td> Omar </td> <td> Software engineer </td> <td> <img src="assets/images/tulips-6800875_1280.webp" width="50" height="50"> </td> <td width="100"> <input type="file" /></td> <td><a href="assets/pdf/A Complete Guide to Grid _ CSS-Tricks.pdf">User CV</a></td>
+            </tr>
+            <tr>
+                 <td> Maryam </td> <td> Informtion tech </td> <td> <img src="assets/images/tulips-6800875_1280.webp" width="50" height="50"> </td> <td width="100"> <input type="file" /></td> <td><a href="assets/pdf/A Complete Guide to Grid _ CSS-Tricks.pdf">User CV</a></td>
+            </tr>
+            <tr>
+                 <td> Ayesha </td> <td> Data Scientist </td> <td> <img src="assets/images/tulips-6800875_1280.webp" width="50" height="50"> </td> <td width="100"> <input type="file" /></td> <td><a href="assets/pdf/A Complete Guide to Grid _ CSS-Tricks.pdf">User CV</a></td>
+            </tr>
+     </table>
+</body>
+</html>

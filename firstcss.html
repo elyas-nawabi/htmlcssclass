@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>styleing</title>
+    <style>
+            article *{
+                background-color: #ccc;
+            }
+
+        /* p{
+            font-size: 7rem;
+        } */
+        /* p.para{
+            font-size: 2rem;
+        } */
+        /* p#first{
+            font-size: 4rem;
+        } */
+
+        /* [type="text"], [type="password"], div, h4{
+            border: 5px solid #ccc
+        } */
+        /* [type="password"]{
+            border: 5px solid #ccc
+        }
+        div{
+            border: 5px solid #ccc
+        }
+        h4{
+            border: 5px solid #ccc
+        } */
+        /* div[data-type="test"]{
+            border: 5px solid #ccc
+        } */
+        ul~p{
+            font-size: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <div data-type="test">
+        first id
+    </div>
+    <!-- 
+        html: structure
+        <tagname> content </tagname>
+        CSS: cascading style sheet
+        selector {
+            property: value ;  // declaration
+        }
+        selector: how to select an element and apply design for it
+        1- simple selector:
+           a- id              top prio
+           b- class selector  2nd
+           c- tag selector    last (type selector)
+        2- universal selector: selects all tags in the document
+        wildcard : *
+        3- attribute selector
+        4- grouping selector
+           ,
+        5- combinator selector:
+           a- descendant selector: ( space )
+           b- child selector: ( > )
+           c- adjacent selector ( + )
+           d- general sibling selector
+        6- pseudo - element
+        7- pseudo - classes
+           
+        [data-type = 'value']
+        {
+            code ... 
+        }
+        design
+        JS: functionality
+        Robot: 
+        structure:
+        Css:
+        JS
+     -->
+     <ul>
+        <strong> this is also a strong text</strong>
+        <li>
+            <a href="">some text <strong>this is emphasized text</strong></a>
+        </li>
+     </ul>
+     <p>
+        this tag is first nighbor of ul tag.
+     </p>
+     <p>
+        this tag is second nighbor of ul tag.
+     </p>
+   <article>
+    <h1>heading one</h1>
+    <p id="first" class="para">this is our first paragraph.</p>
+    <!-- <p id="second" class="para">this is our first paragraph.</p> -->
+   </article>
+   <input type="text">
+   <br>
+   <input type="password">
+   <br>
+   <input type="submit">
+   <br>
+   <h4>This is fourth type of heading.</h4>
+</body>
+</html>
