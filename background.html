@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100%;
+            height: 200px;
+            background-color: rgba(123, 234, 147, 0.824);
+            color:white;
+            background-image: url("assets/images/Python.jpg"), url("assets/images/tulips-6800875_1280.webp");
+            background-size: 100px;
+            background-position: center center, top right;
+            background-repeat: no-repeat;
+            font-size:2rem;
+            /* font-size: 100%; */
+            /* 
+            16px
+            100% 16 = 16
+            150% 16 = 24px
+            */
+
+            /* padding: 20px; */
+            /* padding: 10px 20px;
+            padding: 10px 4px 39px 34px;
+            padding: 19px 88px 52px; */
+            /* 10px top bottom, 20px right left */
+            /* 10px top right:4px , bottom:39px left 34px */
+            /* 10px top bottom, 20px right left */
+            /* 19px top, 88px right, left, 52px */
+            /* padding never gets negative value. */
+            /* top right bottom left */
+            /* margin: 20px; */
+            /* 
+            real width: 200px + 20px right padding   , 20px left padding = 240
+            real height: 200px + 20px + 20px = 240 px
+            real width: 200px + 20px right padding , 20px left padding + 20px left + 20px righ = 280
+            real height: 200px + 20px + 20px = 240 px + 20px top, 20px bottom = 280px
+            */
+            /* border: 20px solid gold;
+            outline:20px solid green;
+            box-sizing: border-box;
+            overflow: scroll; */
+            /* 
+            color:
+            1- rgb (red ; 0 -255, green 0 - 255, blue 0 -255)
+            2- hexadecimal
+            # 0-9 a-f
+            #ffbc00
+            #fff
+            3- name: 
+            148
+            red, gold, yellow, pink, .......
+            4- hsl
+            
+            units;
+            1- relative
+            %, em , rem, vw, vh
+            2- absolute, fixed
+            px, cm, inch, pc, 
+            
+            */
+        }
+        ul li{
+            font-size:2rem;
+        }
+        p{
+            font-size: 5vh;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        padding
+        add space inside the content, box
+        margin,
+        add space outside the box
+        box model, border, outline, background
+
+     -->
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi obcaecati quo omnis, voluptatibus
+            praesentium repudiandae! Labore beatae nam fuga! Ullam, inventore molestiae provident tenetur quasi sunt
+            nemo doloribus tempore obcaecati.
+        </p>
+    </div>
+    <ul>
+        <li>first child
+            <ol>
+                <li>sub child1</li>
+                <li>sub child2</li>
+                <li>sub child3</li>
+            </ol>
+        </li>
+        <li>second</li>
+        <li>third</li>
+    </ul>
+</body>
+
+</html>
