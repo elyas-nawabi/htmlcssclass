@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>styling lists</title>
+    <style>
+        ol {
+            /* display: list-item; */
+            /* background-color: tomato; */
+            display: flex;
+
+        }
+
+        ol li {
+            /* background-color: goldenrod; */
+            /* list-style-position: outside; */
+            /* list-style-type:persian; */
+            list-style-type: none;
+            list-style-image: url("assets/images/bulletpoint.png");
+            padding-left: 20px;
+            margin-left: 30px;
+
+        }
+        ol li:hover{
+            background-color: #c1c1c1;
+        }
+
+        ol li::marker {
+            content: "📢";
+            color: gold;
+        }
+        ul li{
+            list-style: none;
+        }
+        span{
+            width:36px;
+            display: inline-block;
+        }
+        .num{
+            color: goldenrod;
+        }
+        .num::after{
+            content: " - ";
+        }
+        ul li a{
+            text-decoration: none;
+            color:inherit
+        }
+        ul{
+            display:none;
+        }
+        li:nth-child(4):hover ul{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Today's Topics:
+    </h1>
+    <ol>
+        <li>List</li>
+        <li>Styling Lists</li>
+        <li>Meta</li>
+        <li id="menu">Html
+            <ul>
+                <li><span class="num">1 </span> <span><a href="http://www.google.com">Lists </a></span></li>
+                <li><span class="num">199 </span> <span><a href="http://www.google.com">Lists </a></span></li>
+                <li><span class="num">144 </span>  <span><a href="http://www.google.com">Lists </a></span></li>   
+            </ul>
+
+        </li>
+    </ol>
+</body>
+
+</html>
