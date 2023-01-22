@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#parent{
+        background-color:dodgerblue;
+        display: flex;
+        /* flex-direction: column-reverse; */
+        /* justify-content:space-evenly */
+        height: 700px;
+        /* align-items: stretch; */
+        /* justify-content: center;
+        align-items: flex-end; */
+    }
+    div.child{
+        width: 100px;
+        height: 100px;
+        background-color: #ffbc00;
+        margin: 10px;
+        font-size: 3rem;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <!-- 
+        layout:
+            float  X
+            flex  ok
+            type of layout
+            alignment:
+            top, right, left, center, bottom
+            perfect center
+            one dimension layout
+             - horizontal 
+             - vertical
+            flex:
+                parent
+                 - display: flex
+                 alignment
+                 - vertical
+                 - horizontal (flex-start, center, flex-end)
+                 - justify-content: hor alignment
+                 - align-items: ver alignment
+                child
+                 - flex-grow
+                 - flex-basis
+                 - flex-shrink
+
+            flex: main axis ( horizontal )
+                  cross axis ( vertical )
+            grid  ok
+     -->
+    <div id="parent">
+        <div class="child" id="child1">F</div>
+        <div class="child" id="child2">L</div>
+        <div class="child" id="child3">E</div>
+        <div class="child" id="child4">X</div>
+    </div>
+</body>
+</html>

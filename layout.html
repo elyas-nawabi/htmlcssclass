@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header, footer{
+            background-color: #ffbc00;
+            height: 100px;
+        }
+        article{
+            display: flex;
+        }
+        section#left{
+            background-color: red;
+            height: 400px;
+            flex-basis: 20%;
+        }
+        section#center{
+            background-color: #fff;
+            height: 400px;
+            flex-basis: 60%;
+
+
+        }
+        section#right{
+            background-color: red;
+            height: 400px;
+            flex-basis: 20%;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            header
+        </header>
+        <article>
+            <section id="left">
+                left section
+            </section>
+            <section id="center">
+                center section
+            </section>
+            <section id="right">
+                right section
+            </section>
+        </article>
+        <footer>
+            footer
+        </footer>
+    </div>
+</body>
+</html>
