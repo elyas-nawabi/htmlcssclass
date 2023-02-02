@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#parent {
+            background-color: dodgerblue;
+            height: 700px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr 400px 1fr;
+            grid-gap: 20px;
+        }
+
+        div.child {
+            /* width: 100px; */
+            /* height: 100px; */
+            background-color: #ffbc00;
+            /* margin: 10px; */
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        div#child1 {
+            grid-column: 1/ span 5;
+        }
+
+        div#child2 {
+            grid-column: 1
+        }
+
+        div#child3 {
+            grid-column: 2/ span 4;
+        }
+
+        div#child4 {
+            grid-column: 1/ span 5;
+        }
+
+        /*
+        div#child2 {
+            grid-row: 3/span 4;
+        }
+
+        div#child3 {
+            grid-column: 2/ span 3;
+        }
+
+        div#child4 {
+            grid-column: ;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- 
+        layout:
+        flex: 1 dimenstion
+        - row
+        - column
+        alignment
+
+        scope
+        grid: 2 dimenstion
+        - row, column
+        scope : complex layout
+        parent
+        display: grid
+        child
+        grid-column
+        grid-row
+        grid-template-column
+        grid-template-row
+        grid-gap
+     -->
+    <div id="parent">
+        <div class="child" id="child1">G</div>
+        <div class="child" id="child2">R</div>
+        <div class="child" id="child3">I</div>
+        <div class="child" id="child4">D</div>
+    </div>
+</body>
+
+</html>
