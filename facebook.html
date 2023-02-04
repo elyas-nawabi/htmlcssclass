@@ -59,14 +59,98 @@
             padding: 0;
             list-style: none;
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
+            margin-right: 50px;
 
+        }
+
+        ul li {
+            margin-left: 20px;
+        }
+
+        ul li:first-child {
+            display: flex;
+            align-items: center;
+        }
+
+        ul li:first-child svg {
+            margin-right: 10px;
+        }
+
+        /* 
+        left aside design
+        */
+        article {
+            display: flex;
+            background-color: #EAEBEF;
+            padding: 20px;
+        }
+
+        article aside {
+            flex: 0.6;
+            padding: 10px;
+        }
+
+        article aside ul {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        article aside ul li {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        article>main {
+            flex: 3;
+            background-color: red;
+        }
+
+        article>section {
+            flex: 1
+        }
+
+        article main>section header{
+            justify-content:flex-start;
+            height: 40px;
+            background-color: #F5F6F8;
+            padding-left: 20px;
+        }
+        article main>section header div{
+            margin-right: 20px;
+        }
+        div#vertical-bar{
+            height: 30px;
+            width: 1px;
+            background-color: grey;
+        }
+        @media screen and (max-width:600px) {
+            header {
+                /* background-color: red; */
+            }
+
+            header div#searchBox {
+                margin-left: 10px;
+            }
+
+            #facebookLogo {
+                margin-right: 10px;
+            }
+
+            header ul {
+                display: none;
+            }
         }
     </style>
 </head>
 
 <body>
     <div id="wrapper">
+        <!-- header section -->
         <header>
             <div id="searchBox">
                 <svg id="facebookLogo" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#fff"
@@ -140,6 +224,169 @@
             </div>
 
         </header>
+        <!-- 
+            body section
+         -->
+        <article>
+            <aside>
+                <ul>
+                    <li>
+                        <svg id="facebookLogo" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="blue"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg>
+                        <span> News Feed</span>
+                    </li>
+                    <li>
+                        <svg id="facebookLogo" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="blue"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg>
+                        <span> News Feed</span>
+                    </li>
+                    <li>
+                        <svg id="facebookLogo" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="blue"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg>
+                        <span> News Feed</span>
+                    </li>
+                    <li>
+                        <svg id="facebookLogo" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="blue"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg>
+                        <span> News Feed</span>
+                    </li>
+                    <li>
+                        <svg id="facebookLogo" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="blue"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg>
+                        <span> News Feed</span>
+                    </li>
+                </ul>
+                <h3>Shortcuts</h3>
+                <ul>
+                    <li>
+                        <svg id="facebookLogo" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="blue"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg>
+                        <span> News Feed</span>
+                    </li>
+                </ul>
+                <h3>Explore</h3>
+                <ul>
+                    <li>
+                        <svg id="facebookLogo" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="blue"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg>
+                        <span> News Feed</span>
+                    </li>
+                    <li>
+                        <svg id="facebookLogo" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="blue"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg>
+                        <span> News Feed</span>
+                    </li>
+                    <li>
+                        <svg id="facebookLogo" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="blue"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg>
+                        <span> News Feed</span>
+                    </li>
+                    <li>
+                        <svg id="facebookLogo" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="blue"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg>
+                        <span> News Feed</span>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                        </svg>
+                        <span> <a href="#">See More ...</a></span>
+                    </li>
+                </ul>
+                </ul>
+            </aside>
+            <main>
+                <section id="write-post">
+                    <header>
+                        <div>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-person-check" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514ZM11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
+                                    <path
+                                        d="M8.256 14a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1h5.256Z" />
+                                </svg>
+                            </span>
+                            <span>
+                                Make Post
+                            </span>
+                        </div>
+                        <div id="vertical-bar"></div>
+                        <div>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-person-check" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514ZM11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
+                                    <path
+                                        d="M8.256 14a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1h5.256Z" />
+                                </svg>
+                            </span>
+                            <span>
+                                Photo/Video Album
+                            </span>
+                        </div>
+                        <div id="vertical-bar"></div>
+                        <div>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-person-check" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514ZM11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
+                                    <path
+                                        d="M8.256 14a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1h5.256Z" />
+                                </svg>
+                            </span>
+                            <span>
+                                Live Stream
+                            </span>
+                        </div>
+                    </header>
+                    <main>
+
+                    </main>
+                    <footer>
+
+                    </footer>
+                </section>
+            </main>
+            <section>
+
+            </section>
+        </article>
     </div>
 </body>
 
