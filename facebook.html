@@ -50,7 +50,7 @@
         }
 
         div#links {
-            flex: 1;
+            /* flex: 1; */
             color: #fff;
         }
 
@@ -114,24 +114,24 @@
             flex: 1
         }
 
-        article main>section header{
-            justify-content:flex-start;
+        article main>section header {
+            justify-content: flex-start;
             height: 40px;
             background-color: #F5F6F8;
             padding-left: 20px;
         }
-        article main>section header div{
+
+        article main>section header div {
             margin-right: 20px;
         }
-        div#vertical-bar{
+
+        div#vertical-bar {
             height: 30px;
             width: 1px;
             background-color: grey;
         }
-        @media screen and (max-width:600px) {
-            header {
-                /* background-color: red; */
-            }
+
+        @media screen and (max-width:1200px) {
 
             header div#searchBox {
                 margin-left: 10px;
@@ -139,6 +139,35 @@
 
             #facebookLogo {
                 margin-right: 10px;
+            }
+
+            header input {
+                width: 200px;
+            }
+
+            header ul {
+                /* display: none; */
+            }
+        }
+
+        @media screen and (max-width:800px) {
+
+            header div#searchBox {
+                margin-left: 10px;
+                width: 100%;
+            }
+
+            #facebookLogo {
+                margin-right: 10px;
+            }
+
+            header #searchBoxInner {
+                width: 100%;
+                margin-right: 20px;
+            }
+
+            header input {
+                width: 100%;
             }
 
             header ul {
