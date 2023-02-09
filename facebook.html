@@ -270,6 +270,132 @@
             margin-right: 10px;
         }
 
+        section#right-section {
+            padding: 0 20px;
+        }
+
+        div#storyTop {
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+            font-size: 0.8rem;
+        }
+
+        section#right-section main {
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 20px;
+            padding-bottom: 40px;
+
+        }
+
+        div#circle {
+            background-color: #ccc;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            border: 1px solid gray;
+        }
+
+        div#addtostory {
+            margin-left: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        div#addtostory :first-child {
+            color: #4469B0;
+            font-weight: bold;
+        }
+
+        div#suggestions,
+        div#suggestions2 {
+            margin-top: 10px;
+            background-color: #fff;
+        }
+
+        div#suggestions div#suggestionstop,
+        div#suggestions2 div#suggestionstop {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+        }
+
+        div#suggestions main {
+            /* margin-bottom: -20px; */
+            /* background-image: url(assets/images/tulips-6800875_1280.webp); */
+
+        }
+
+        div#suggestions div#sugfooter,
+        div#suggestions2 div#sugfooter {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+        }
+
+        div#suggestions div#sugfooter :first-child,
+        div#suggestions2 div#sugfooter :first-child {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @keyframes myanimation {
+            0% {
+                background-color: red;
+
+                /* background-image: url(assets/images/tulips-6800875_1280.webp); */
+                width: 100%;
+                height: 200px;
+            }
+
+            20% {
+                background-color: blue;
+                width: 100%;
+                height: 200px;
+
+            }
+
+            40% {
+                background-color: green;
+                width: 100%;
+                height: 200px;
+
+            }
+
+            60% {
+                background-color: green;
+                width: 100%;
+                height: 200px;
+
+            }
+
+            80% {
+                background-color: white;
+                width: 100%;
+                height: 200px;
+
+            }
+
+            80% {
+                background-color: #ffbc00;
+                width: 100%;
+                height: 200px;
+
+            }
+        }
+
+        section#right-section div#suggestions main {
+            animation: myanimation 5s;
+        }
+
         @media screen and (max-width:1200px) {
 
             header div#searchBox {
@@ -286,6 +412,10 @@
 
             header ul {
                 /* display: none; */
+            }
+
+            section#right-section {
+                display: none;
             }
         }
 
@@ -309,8 +439,19 @@
                 width: 100%;
             }
 
-            header ul {
+            header div#links {
                 display: none;
+            }
+
+            article {
+                display: flex;
+                flex-direction: column;
+            }
+
+            section#right-section {
+                margin-top: 20px;
+                padding: 0;
+                display: inline-block;
             }
         }
     </style>
@@ -631,7 +772,7 @@
                     </footer>
                 </section>
             </main>
-            <section>
+            <section id="right-section">
                 <div id="stories">
                     <div id="storyTop">
                         <span>Stories</span>
@@ -641,13 +782,49 @@
                         <div id="circle">
                             <span>+</span>
                         </div>
-                        <p>
+                        <div id="addtostory">
                             <span>Add to your story</span>
                             <span>
                                 Share, photo, video and other things....
                             </span>
-                        </p>
+                        </div>
                     </main>
+                </div>
+                <div id="suggestions">
+                    <div id="suggestionstop">
+                        <span>Suggested Groups</span>
+                        <a href="#">See All</a>
+                    </div>
+                    <main style="height: 200px;">
+                        <!-- <img src="assets/images/tulips-6800875_1280.webp" width="100%" height="150px" alt=""> -->
+                    </main>
+                    <div id="sugfooter">
+                        <div>
+                            <span>Mad Men (maDdicts)</span>
+                            <span>6,195 members</span>
+                        </div>
+                        <div>
+                            <button>+ Join</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="suggestions2">
+                    <div id="suggestionstop">
+                        <span>Suggested Groups</span>
+                        <a href="#">See All</a>
+                    </div>
+                    <main>
+                        <img src="assets/images/tulips-6800875_1280.webp" width="100%" height="150px" alt="">
+                    </main>
+                    <div id="sugfooter">
+                        <div>
+                            <span>Mad Men (maDdicts)</span>
+                            <span>6,195 members</span>
+                        </div>
+                        <div>
+                            <button>+ Join</button>
+                        </div>
+                    </div>
                 </div>
             </section>
         </article>
