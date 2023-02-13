@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* background-image:linear-gradient(red,green); */
+            background-repeat: no-repeat;
+        }
+
+        @keyframes moveObject {
+            from {
+                transform: translateX(0);
+            }
+
+            50% {
+                transform: translateX(300px);
+            }
+
+            to {
+                transform: translateX(300px) scale(1.5);
+            }
+        }
+
+        div {
+            background-color: red;
+            background: linear-gradient(234deg, #ff0000 0%, #ffff00 40%, #4800ff 80%);
+            width: 100px;
+            height: 100px;
+            /* transform:  */
+            margin-top: 100px;
+            box-shadow: 58px 2px 96px 46px rgba(198, 42, 42, 0.75);
+            /* animation: moveObject 5s 3; */
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0.1);
+                opacity: 0;
+            }
+
+            60% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        h1 {
+            /* animation: bounceIn 5s infinite; */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        animation:
+        - animation
+          @keyframe name{
+            0%{
+
+            }
+            20%{
+
+            }
+            30%{
+
+            }
+          }
+        - transition
+
+     -->
+    <h1>
+        Hello World!
+    </h1>
+    <div class="primary">
+        <!-- 
+            bootstrap:
+            framework
+            10000 class
+
+            animation resources:
+
+            https://cssgenerator.org/filter-css-generator.html
+
+            https://themeisle.com/blog/css-animations-tutorial/
+
+            https://animate.style/
+
+            https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions
+         -->
+    </div>
+</body>
+
+</html>
